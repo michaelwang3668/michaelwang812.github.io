@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Michael Wang</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+	<nav>
+      <h1>Michael Wang</h1>
+      <ul class="navigation">
+		<li><a href="index.html" class="nav-link">Projects</a></li>
+        <li><a href="bio.html" class="nav-link">Bio/Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1o8Y8XtTIM6a0ddj770bYpueJxfGToap6/view?usp=share_link" class="nav-link">Resume</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+	</nav>
+    
+	
+    <!-- Projects section -->
+	<section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1024px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png"
+            alt="Sudoku Board"
+            class="project-pic"
+          />
+          <h3 class="project-title">Sudoku Solver</h3>
+          <p class="project-details">
+			Python
+          </p>
+          <a href="sudoku.html" target="_blank" class="project-link">Check it Out</a>
+        </div>
+		
+        <div class="project-container">
+          <img
+            src="https://www.simplilearn.com/ice9/free_resources_article_thumb/SQLnjection.png"
+            alt="SQLi"
+            class="project-pic"
+          />
+          <h3 class="project-title">Blind Time-based SQLi</h3>
+          <p class="project-details">
+            Python
+          </p>
+          <a href="sqli.html" target="_blank" class="project-link">Check it Out</a>
+        </div>
+		
+		<div class="project-container">
+          <img
+            src="https://evalian.co.uk/wp-content/uploads/2022/03/XSS-attacks-what-is-cross-site-scripting.png"
+            alt="XSS"
+            class="project-pic"
+          />
+          <h3 class="project-title">POST XSS</h3>
+          <p class="project-details">
+            JavaScript
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        
+      </div>
+    </section>
+  </body>
+</html>
