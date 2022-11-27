@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Michael Wang</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+	<nav>
+      <h1>Michael Wang</h1>
+      <ul class="navigation">
+		<li><a href="index.html" class="nav-link">Projects</a></li>
+        <li><a href="bio.html" class="nav-link">Bio/Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1o8Y8XtTIM6a0ddj770bYpueJxfGToap6/view?usp=share_link" class="nav-link">Resume</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+	</nav>
+	
+	<h2 class="projects-title">Sudoku Solver</h2>
+	
+	<div class="Purpose">
+		<h2>Purpose</h2>
+		<p>
+		The purpose of this project was to create a Python program that solves a sudoku board using two methods: backtracking and forwardchecking.
+		</p>	
+	</div>
+	
+	<div class="Methods">
+		<h2>Methods</h2>
+		<img src="sudokulab.png" alt="sudokulab" id="sudokulab"/>
+		<p>
+		In both methods, the way that the program is implemented is by placing numbers left to right, top to bottom.
+		</p>
+		<p>
+		The idea behind backtracking is checking if placing a number will result in seeing it more than once in the same row, column or box, then we know that this is not a solution, and backtrack.
+		</p>
+		<p>
+		The idea behind forward checking is that whenever we place a number, we add it to a list of constraints. In this case the constraint would be that the same number can not be in the same row, column, or box.
+		</p>
+		<p>
+		If the constraints are violated for a row, column, or box then we know that we made a mistake and know that we should not continue with this board.
+		</p>
+		<p>
+		Forward checking is more efficient than backtracking because it only places numbers that match the contraints and detects inconsistencies earlier thatn backtracking.
+		</p>
+	</div>
+	
+	</p>
+	
+	<div class="Results">
+		<h2>Results</h2>
+		<img src="sudokuresults.png" alt="sudokuresults" id="sudokuresults"/>
+		<br>
+		<a href="https://github.com/michaelwang812/Sudoku-Solver/blob/main/student_code.py" class="code">Link to Code</a>
+	</div>
+	
+  </body>
+</html>

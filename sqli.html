@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Michael Wang</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+	<nav>
+      <h1>Michael Wang</h1>
+      <ul class="navigation">
+		<li><a href="index.html" class="nav-link">Projects</a></li>
+        <li><a href="bio.html" class="nav-link">Bio/Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1o8Y8XtTIM6a0ddj770bYpueJxfGToap6/view?usp=share_links" class="nav-link">Resume</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+	</nav>
+	
+	<h2 class="projects-title">Blind Time-based SQLi</h2>
+	
+	<div class="Purpose">
+		<h2>Purpose</h2>
+		<p>
+		The purpose of this project was to create a Python program that performs Blind Time-based SQL injection by performing different queries on a MySQL server.
+		</p>	
+	</div>
+	
+	<div class="Methods">
+		<h2>Methods</h2>
+		<p>
+		The idea behind this SQLi is that you bruteforce one character at a time with the if, substring, and sleep functions in MySQL.
+		</p>
+		<p>
+		First you make a query and checks if the first character of the response is "A", then "B", and so on.
+		If so, then sleep for 5 seconds. Now in the same manner we query for the second character in the response, and so on. 
+		Based on the time that it gets for the server to respond to us, we know if are correct or not.
+		</p>
+		<p>
+		Now that we have a strategy to make queries and retrieve the response, we first enumerate the databases, then the tables in the databases, and finally the columns in the tables. 
+		</p>
+		<p>
+		Finally, now that we know the layout of the database, we can pull information from it with a SELECT statement and use the same method to bruteforce the response and get the data.
+		</p>
+	</div>
+	
+	<div class="Results">
+		<h2>Results</h2>
+		<img src="dbs.png" alt="sudokuresults" id="sudokuresults"/>
+		<br>
+		<img src="tables.png" alt="sudokuresults" id="sudokuresults"/>
+		<br>
+		<img src="columns.png" alt="sudokuresults" id="sudokuresults"/>
+		<br>
+		<img src="flag1.png" alt="sudokuresults" id="sudokuresults"/>
+		<img src="flag2.png" alt="sudokuresults" id="sudokuresults"/>
+		
+		<a href="https://github.com/michaelwang812/Blind-Time-based-SQLi/blob/main/sqli.py" class="code">Link to Code</a>
+	</div>
+	
+  </body>
+</html>

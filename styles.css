@@ -1,0 +1,136 @@
+body {
+	background-color: #252A34;
+	color: white;
+}
+
+a {
+	color: white;
+}
+/* nav bar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  background-color: #252A34;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px
+}
+
+h1{
+	font-size:30px;
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+/* Projects page */
+.projects-title{
+	font-size: 50px;
+}
+
+.projects-title {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 30rem;
+  padding: 1rem;
+  padding: 20px;
+  margin: 10px;  
+  border:1px solid black;
+  border-radius: 25px;
+
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.project-pic {
+	width: auto;
+	height: 300px
+}
+
+/* Within projects*/
+.Methods{
+	width: 700px;
+	margin: auto
+}
+
+.Purpose{
+	width: 700px;
+	margin: auto;
+}
+
+.Results{
+	width: 700px;
+	margin: auto;
+}
+
+.code {
+	font-family: sans-serif;
+	font-size:30px;
+}
+
+#sudokulab{
+	width: 200px;
+	height: auto
+}
+
+#sudokulab,#sudokuresults{
+	display: block;
+	margin: auto
+	
+}
+
+/* Bio/Contact */
+.bio, .contact, .personal {
+  width: 65rem;
+  padding: 0.625rem;
+}
+
+.michael {
+  display: flex;
+  width: 400px;
+  height: auto;
+  float: right;
+  padding-right: 200px;
+  padding-top: 100px
+}
+
+.bio-title, .contact-title, .personal-title{
+	font-size: 30px;
+	text-align: center;
+}
+
+.Purpose p,.Methods p, .bio p, .contact ul, .personal p{
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
