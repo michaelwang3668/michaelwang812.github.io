@@ -6,6 +6,16 @@ body {
 a {
 	color: white;
 }
+
+ul {
+  list-style-type: none;
+  font-size: 20px
+}
+
+h1{
+	font-size:30px;
+}
+
 /* nav bar */
 nav {
   position: sticky;
@@ -18,15 +28,6 @@ nav {
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
   background-color: #252A34;
-}
-
-ul {
-  list-style-type: none;
-  font-size: 20px
-}
-
-h1{
-	font-size:30px;
 }
 
 .burger-menu {
@@ -44,14 +45,11 @@ nav ul {
 }
 
 /* Projects page */
-.projects-title{
-	font-size: 50px;
-}
-
 .projects-title {
   text-align: center;
   margin: auto;
   margin-bottom: 1rem;
+  font-size: 50px;
 }
 
 .project-container {
